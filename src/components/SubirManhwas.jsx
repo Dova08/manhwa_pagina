@@ -200,7 +200,7 @@ const SubirManhwas = () => {
         }));
       }
   
-      const response = await fetch('http://localhost:8060/backend-mhw/api/manhwas.php', {
+      const response = await fetch('http://localhost:8060/backend-mhw/api/manhwas/post/subir-manhwa.php', {
         method: 'POST',
         headers: headers,
         body: formDataToSend
@@ -219,7 +219,7 @@ const SubirManhwas = () => {
       }
   
       setSuccess(true);
-      setTimeout(() => navigate('/manhwas'), 2000);
+      setTimeout(() => navigate('/series'), 2000);
     } catch (err) {
       console.error('Error detallado:', err);
       // Manejo específico para errores de tamaño

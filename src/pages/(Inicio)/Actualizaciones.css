@@ -1,0 +1,210 @@
+.actualizaciones-root {
+  background-color: #0d1117;
+  color: #e6edf3;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.updates-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #f0f6fc;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.section-header .view-all {
+  font-size: 1rem;
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.section-header .view-all:hover {
+  text-decoration: underline;
+}
+
+.manhwas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+  align-items: stretch;
+}
+
+.manhwa-card {
+  background-color: #161b22;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-content {
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: #c9d1d9;
+  min-height: 2.5rem;
+}
+
+.card-content .author {
+  font-size: 0.9rem;
+  color: #8b949e;
+  min-height: 1.2rem;
+}
+
+.card-content .genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.read-btn {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #238636;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.manhwa-card:hover {
+  transform: scale(1.03);
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #238636;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content .date {
+  font-size: 0.8rem;
+  color: #8b949e;
+  margin-top: 0.4rem;
+}
+
+.card-content .chapters-count {
+  font-size: 0.85rem;
+  color: #79c0ff;
+  margin-top: 0.4rem;
+}
+
+.genre-badge {
+  background-color: #30363d;
+  color: #c9d1d9;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+.read-btn:hover {
+  background-color: #2ea043;
+}
+
+/* Estilos para los estados */
+.status-completed {
+  background-color: #4CAF50 !important;
+}
+
+.status-ongoing {
+  background-color: #FFC107 !important;
+}
+
+.status-cancelled {
+  background-color: #F44336 !important;
+}
+
+.status-hiatus {
+  background-color: #9E9E9E !important;
+}
+
+.no-results {
+  color: #8b949e;
+  padding: 1rem;
+  text-align: center;
+}
+
+.loading-container,
+.error-container {
+  text-align: center;
+  padding: 3rem;
+}
+
+.spinner {
+  border: 4px solid #30363d;
+  border-top: 4px solid #58a6ff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.retry-button {
+  margin-top: 1rem;
+  background-color: #da3633;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: #f85149;
+}

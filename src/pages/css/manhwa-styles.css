@@ -1,0 +1,263 @@
+/* Estilos específicos para el componente Manhwa */
+.actualizaciones-root {
+  background-color: #0d1117;
+  color: #e6edf3;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.actualizaciones-root .updates-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Estilos para loading */
+.actualizaciones-root .loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.actualizaciones-root .spinner {
+  border: 4px solid #30363d;
+  border-top: 4px solid #58a6ff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para errores */
+.actualizaciones-root .error-container {
+  text-align: center;
+  padding: 3rem;
+  background-color: #161b22;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.actualizaciones-root .error-container h4 {
+  color: #f85149;
+  margin-bottom: 1rem;
+}
+
+.actualizaciones-root .retry-button {
+  margin-top: 1rem;
+  background-color: #da3633;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.actualizaciones-root .retry-button:hover {
+  background-color: #f85149;
+}
+
+/* Sección de detalle del manhwa */
+.actualizaciones-root .manhwa-detail-section {
+  background-color: #161b22;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.actualizaciones-root .manhwa-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .actualizaciones-root .manhwa-header {
+    flex-direction: row;
+  }
+}
+
+.actualizaciones-root .manhwa-cover {
+  flex: 0 0 300px;
+}
+
+.actualizaciones-root .image-container {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.actualizaciones-root .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.actualizaciones-root .manhwa-info {
+  flex: 1;
+}
+
+.actualizaciones-root .section-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #f0f6fc;
+  margin-bottom: 1rem;
+}
+
+.actualizaciones-root .meta-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.actualizaciones-root .status {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  background-color: #238636;
+  color: #f0f6fc;
+}
+
+.actualizaciones-root .date {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.actualizaciones-root .author-info {
+  margin-bottom: 1.5rem;
+}
+
+.actualizaciones-root .author {
+  font-size: 1rem;
+  color: #c9d1d9;
+}
+
+.actualizaciones-root .genres-section {
+  margin-bottom: 2rem;
+}
+
+.actualizaciones-root .genres-section h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #f0f6fc;
+}
+
+.actualizaciones-root .genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.actualizaciones-root .genre-badge {
+  background-color: #30363d;
+  color: #c9d1d9;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+}
+
+.actualizaciones-root .description-section h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #f0f6fc;
+}
+
+.actualizaciones-root .description-text {
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+/* Sección de capítulos */
+.actualizaciones-root .chapters-section {
+  margin-top: 2rem;
+}
+
+.actualizaciones-root .manhwa-card {
+  background-color: #161b22;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.actualizaciones-root .card-header {
+  background-color: #0d1117;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #30363d;
+}
+
+.actualizaciones-root .card-header h3 {
+  font-size: 1.5rem;
+  color: #f0f6fc;
+  margin: 0;
+}
+
+.actualizaciones-root .card-body {
+  padding: 1.5rem;
+}
+
+/* Lista de capítulos */
+.actualizaciones-root .chapters-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actualizaciones-root .chapter-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #30363d;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.actualizaciones-root .chapter-item:hover {
+  background-color: #21262d;
+}
+
+.actualizaciones-root .chapter-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actualizaciones-root .chapter-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.actualizaciones-root .chapter-date {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.actualizaciones-root .chapter-available {
+  background-color: #238636;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.actualizaciones-root .no-chapters {
+  color: #8b949e;
+  padding: 1rem;
+  text-align: center;
+}

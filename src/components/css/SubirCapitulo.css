@@ -1,0 +1,198 @@
+/* SubirCapitulo.css */
+
+/* Estilos para el área de drag and drop */
+.subir-capitulo .drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+
+.subir-capitulo .drop-zone.dragging {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+.subir-capitulo .drop-zone-content {
+  color: #666;
+}
+
+.subir-capitulo .drop-zone i {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Estilos para el explorador de archivos con miniaturas */
+.subir-capitulo .file-explorer {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.subir-capitulo .file-explorer-header {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 80px;
+  gap: 15px;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.subir-capitulo .file-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.subir-capitulo .file-item {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 80px;
+  gap: 15px;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.subir-capitulo .file-item:hover {
+  background-color: #f8f9fa;
+}
+
+.subir-capitulo .file-thumbnail {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.subir-capitulo .file-thumbnail img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.subir-capitulo .file-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subir-capitulo .file-size {
+  text-align: right;
+  padding-right: 10px;
+  color: #666;
+}
+
+.subir-capitulo .file-actions {
+  text-align: center;
+}
+
+.subir-capitulo .file-explorer-footer {
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Estilos para el formulario y alertas */
+.subir-capitulo {
+  padding: 20px 0;
+}
+
+.subir-capitulo .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.subir-capitulo .alert {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.subir-capitulo .alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.subir-capitulo .alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.subir-capitulo .form-group {
+  margin-bottom: 20px;
+}
+
+.subir-capitulo .form-control {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.subir-capitulo textarea.form-control {
+  min-height: 100px;
+}
+
+.subir-capitulo .btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.subir-capitulo .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.subir-capitulo .btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.subir-capitulo .btn-primary:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.subir-capitulo .btn-sm {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.subir-capitulo .btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.subir-capitulo .btn-danger:hover {
+  background-color: #c82333;
+}
+
+.subir-capitulo .spinner-border {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Iconos */
+.subir-capitulo .fas {
+  margin-right: 5px;
+}
