@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-06-2025 a las 21:40:49
+-- Tiempo de generación: 29-01-2026 a las 17:55:17
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `capitulos`
 --
--- Creación: 03-06-2025 a las 16:51:16
+-- Creación: 02-10-2025 a las 20:03:44
 --
 
 CREATE TABLE `capitulos` (
@@ -55,7 +55,7 @@ INSERT INTO `capitulos` (`id`, `manhwa_id`, `numero`, `titulo`, `fecha_publicaci
 --
 -- Estructura de tabla para la tabla `generos`
 --
--- Creación: 25-03-2025 a las 18:17:32
+-- Creación: 02-10-2025 a las 20:03:44
 --
 
 CREATE TABLE `generos` (
@@ -104,7 +104,8 @@ INSERT INTO `generos` (`id`, `nombre`, `descripcion`, `created_at`, `updated_at`
 --
 -- Estructura de tabla para la tabla `manhwas`
 --
--- Creación: 01-04-2025 a las 04:39:14
+-- Creación: 02-10-2025 a las 20:03:44
+-- Última actualización: 29-01-2026 a las 16:50:08
 --
 
 CREATE TABLE `manhwas` (
@@ -129,7 +130,7 @@ INSERT INTO `manhwas` (`id`, `titulo`, `autor`, `descripcion`, `estado`, `fecha_
 (2, 'Solo Leveling', 'Chugong', 'Un cazador débil se convierte en el más fuerte tras un evento misterioso.', 'Finalizado', '2016-03-04', 'https://otakuteca.com/images/books/cover/5c2efcd42cd5e.webp', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
 (3, 'Tower of God', 'SIU', 'Un joven llamado Bam escala una torre misteriosa para encontrar a su amiga perdida.', 'En curso', '2010-06-30', 'https://otakuteca.com/images/books/cover/5e94b820e3a4c.webp', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
 (4, 'The Gamer', 'Sung Sang-Yeong', 'La vida cotidiana de un estudiante que descubre que puede usar habilidades de videojuegos en la realidad.', 'Finalizado', '2013-05-15', 'https://manhwa18.cc/manga/the-gamer-71.jpg', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
-(5, 'Noblesse', 'Son Jae-Ho', 'Un noble vampiro despierta después de 820 años de sueño y debe proteger a su clan.', 'Finalizado', '2007-12-01', 'https://th.bing.com/th/id/OIP.xgJQu_yJ4-fcF8fVIiIcsAHaLF?rs=1&pid=ImgDetMain', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
+(5, 'Noblesse', 'Son Jae-Ho', 'Un noble vampiro despierta después de 820 años de sueño y debe proteger a su clan.', 'Finalizado', '2007-12-01', 'https://cdn2.penguin.com.au/covers/original/9781990778940.jpg', NULL, '2025-04-01 02:21:30', '2026-01-29 16:50:08'),
 (6, 'Lookism', 'Park Tae-Joon', 'Un estudiante víctima de bullying descubre que puede intercambiar su cuerpo entre dos formas: una extremadamente atractiva y otra menos convencional. Esto le permite explorar temas de apariencia, discriminación y autoestima.', 'En curso', '2014-09-01', 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1ZykXwdZJeoi45OP5mYof6neeOH8ZHlv2TLbPnBiE9RMzn-MXn1BkYxy1oVcp4PIspSczWmUDQAsoKt0PDlHxXx46cSDEq0FsZdvBdd-0kTlFtMpZ-Xw7hNhYHZv5PcsKkqQXlkzeRyM/s1600/1675670005053653-1.png', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
 (7, 'Sweet Home', 'Youngchan Hwang\" (escritor) y \"Carnby Kim\" (ilustrador)', 'Un grupo de personas lucha por sobrevivir en un mundo donde los humanos se convierten en monstruos.', 'Finalizado', '2017-09-01', 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664994196i/62889023.jpg', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
 (8, 'Girls of the Wild\'s', 'Hun', 'Un joven se une a una academia exclusiva para mujeres y descubre secretos inesperados.', 'En curso', '2011-04-15', 'https://4.bp.blogspot.com/-rzUCKwDfoOU/WIZdjGo1F1I/AAAAAAAAAew/kLrBobHEygct0P3QC50aSRNfUEKimiO5gCLcB/s1600/3221911-girls%252Bof%252Bthe%252Bwild%2527s.jpg', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
@@ -137,19 +138,20 @@ INSERT INTO `manhwas` (`id`, `titulo`, `autor`, `descripcion`, `estado`, `fecha_
 (10, 'Trace', 'Lee Jong-Beom', 'Un joven con habilidades únicas es perseguido por una organización secreta.', 'En curso', '2014-07-10', 'https://th.bing.com/th/id/OIP.oV9GpX_z07g04DMGph9WmwHaKR?w=577&h=800&rs=1&pid=ImgDetMain', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
 (11, 'Second Life Ranker', 'Seok Jeong-Hyun', 'Un hombre regresa a su infancia para corregir sus errores y alcanzar el éxito.', 'En curso', '2016-08-01', 'https://th.bing.com/th/id/OIP.AL5fN4whMqbNf-KHvsQFAwHaLH?rs=1&pid=ImgDetMain', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
 (12, 'Omniscient Reader\'s Viewpoint', 'Sing Shong (novela original), dibujado por SuHo Ahn', 'Kim Dokja es un bibliotecario común que ha dedicado su vida a leer novelas web. Un día, descubre que el mundo real ha comenzado a transformarse en la trama de una novela que leyó hace años: \"Regresión del Fin del Mundo\". Sin embargo, esta vez, él ya no es solo un espectador. Kim Dokja tiene conocimientos privilegiados sobre los eventos futuros, pero pronto se da cuenta de que el destino está cambiando y no todo será como lo recordaba.', 'En curso', '2020-01-01', 'https://gg.asuracomic.net/storage/media/105/conversions/9b59fdec-optimized.webp', NULL, '2025-04-01 02:21:30', '2025-04-01 02:21:30'),
-(26, 'El Arquitecto de mazmorras', 'Desconocido', 'Kang Chiwoo perdió la vida en un accidente y se reencarnó en el hijo de un gran señor de los demonios en otro mundo. A diferencia de su vida anterior como diseñador de mapas, ahora es un perdedor llamado Kella.', 'En curso', '2025-04-08', 'https://dashboard.olympusbiblioteca.com/storage/comics/covers/1504/01JRASYZBYTD13AG0P022APPYQ-optimized-xl.webp', '', '2025-04-08 19:07:20', '2025-04-08 19:20:39'),
+(26, 'El Arquitecto de mazmorras', 'Desconocido', 'Kang Chiwoo perdió la vida en un accidente y se reencarnó en el hijo de un gran señor de los demonios en otro mundo. A diferencia de su vida anterior como diseñador de mapas, ahora es un perdedor llamado Kella.', 'En curso', '2025-04-08', 'https://dashboard.olympusbiblioteca.com/storage/comics/covers/1504/ChatGPT%20Image%208%20ene%202026,%2008_23_53%20p.m.-xl.webp', '', '2025-04-08 19:07:20', '2026-01-29 16:48:55'),
 (27, 'La Novia de Obsidiana', 'Chung purm', 'Durante toda su vida, la pobre Lueri tuvo que soportar incontables injusticias, pero la situación llega a su punto álgido cuando es obligada a casarse y se encuentra atrapada en un matrimonio sin amor. Sin embargo, quizás por obra del destino, una invitación llega a sus manos y le ofrece la oportunidad de escapar de sus desdichas. Para ello, tendrá que entrar al Cofre de las Joyas y mezclarse con la élite del imperio. Allí, en el lugar menos pensado, encontrará valiosos amigos y, tal vez, aquello que siempre anheló... su verdadero amor.', 'En curso', '2024-05-24', 'https://th.bing.com/th/id/OIP.yLExteYD1p1dexpbXwn-3gAAAA?rs=1&pid=ImgDetMain', '', '2025-04-08 19:41:28', '2025-05-28 19:13:05'),
 (28, 'El más fuerte del mundo de supervivencia', 'Desconocido ', 'Jin Seoun, que llevaba varios meses desempleado tras terminar el servicio militar, estaba completamente enganchado al juego battle royale «Royal Ground».\nUn día, una misteriosa luz lo transporta repentinamente a un mundo desconocido: Cloyd Survival.\nPronto se da cuenta de que este lugar se parece mucho al juego que solía disfrutar.', 'En curso', '2025-05-01', 'https://dashboard.olympusbiblioteca.com/storage/comics/covers/1519/01-xl.webp', NULL, '2025-05-01 22:00:32', '2025-05-01 22:01:36'),
 (30, 'El Regreso Del Archimago Mítico', 'Desconocido', 'El pináculo de la tecnología mágica moderna, un inadaptado incapaz de integrar la inteligencia artificial. Shin Hayul, el mago genio que ha sido desechado. Ante él aparece un libro.\n\n‘Al descendiente que pueda oír esta voz, que posea la misma constitución que la mía, yo, Ray Bell Bytner, le dejo este libro’.\n\nJunto al libro dejado por el legendario archimago, el tiempo detenido de un genio comienza a moverse una vez más', 'En curso', '2025-05-01', 'http://localhost:8060/backend-mhw/public/uploads/portadas/manhwa_30_b099a0c0e6390ea0.jpg', NULL, '2025-05-01 22:20:41', '2025-05-01 22:20:41'),
-(31, 'Pick me up, Gacha Infinito', 'Desconocdio', '¡Por el estudio que te trajo Solo Leveling y El Regreso del Héroe de Clase Desastre y Punto de Vista del Lector Omnisciente! El juego gacha para móviles es conocido por ser brutalmente difícil, y nadie ha sido capaz de despejar una mazmorra. Loki, el quinto entre todos los maestros del mundo, pierde el conocimiento mientras intenta despejar la mazmorra. Al despertar, Loki se encuentra convertido en un héroe de nivel 1, \"Islat Han\". \"¡Es él! Estoy seguro de que es él quien me ha traído aquí\". Para volver a la Tierra, ¡debe guiar a maestros novatos y héroes y atravesar el piso 100 de la mazmorra! \"Te metiste con la persona equivocada\". Esta es la historia del maestro Loki, que se ve obligado a llevar a todos a la victoria y no puede permitirse ni una sola derrota.', 'En curso', '2025-06-07', 'https://dashboard.olympusbiblioteca.com/storage/comics/covers/94/afdasfasdfasdf-xl.webp', NULL, '2025-06-07 18:26:28', '2025-06-07 18:26:28'),
-(32, 'Everyone Loves Her', 'Char Srira', 'La vida de Kang Min-ah ha dado un vuelco debido a su repentina capacidad para teletransportarse. Ahora se enfrenta a una serie de acontecimientos irreversibles provocados por una única decisión. Entre la ira, la confusión y un reprimido sentido de la justicia, Min-Ah se embarca en un nuevo viaje mientras intenta decidir como utilizar su poder. ¿En qué dirección la llevará su poder y qué decisionestomará?', 'En curso', '2025-06-20', 'https://lectormanga.io/content/images/cover/everyone-loves-her.jpg', NULL, '2025-06-20 20:14:09', '2025-06-20 20:14:09');
+(31, 'Pick me up, Gacha Infinito', 'Desconocdio', '¡Por el estudio que te trajo Solo Leveling y El Regreso del Héroe de Clase Desastre y Punto de Vista del Lector Omnisciente! El juego gacha para móviles es conocido por ser brutalmente difícil, y nadie ha sido capaz de despejar una mazmorra. Loki, el quinto entre todos los maestros del mundo, pierde el conocimiento mientras intenta despejar la mazmorra. Al despertar, Loki se encuentra convertido en un héroe de nivel 1, \"Islat Han\". \"¡Es él! Estoy seguro de que es él quien me ha traído aquí\". Para volver a la Tierra, ¡debe guiar a maestros novatos y héroes y atravesar el piso 100 de la mazmorra! \"Te metiste con la persona equivocada\". Esta es la historia del maestro Loki, que se ve obligado a llevar a todos a la victoria y no puede permitirse ni una sola derrota.', 'En curso', '2025-06-07', 'https://dashboard.olympusbiblioteca.com/storage/comics/covers/94/gacha-xl.webp', NULL, '2025-06-07 18:26:28', '2025-10-02 20:19:58'),
+(32, 'Everyone Loves Her', 'Char Srira', 'La vida de Kang Min-ah ha dado un vuelco debido a su repentina capacidad para teletransportarse. Ahora se enfrenta a una serie de acontecimientos irreversibles provocados por una única decisión. Entre la ira, la confusión y un reprimido sentido de la justicia, Min-Ah se embarca en un nuevo viaje mientras intenta decidir como utilizar su poder. ¿En qué dirección la llevará su poder y qué decisionestomará?', 'En curso', '2025-06-20', 'https://preview.redd.it/everyone-loves-her-anyone-have-anything-like-this-where-v0-eeyvta7lq3ze1.jpeg?auto=webp&s=4539efdfa8a49fe51dd3ab220196cec41fb37ad2', NULL, '2025-06-20 20:14:09', '2025-10-02 20:18:48'),
+(33, 'El Mejor Ingeniero del Mundo', 'BK_Moon', 'Cuando el estudiante de ingeniería civil Suho Kim se queda dormido leyendo una novela de fantasía, ¡se despierta como un personaje del libro! Suho se encuentra ahora en el cuerpo de Lloyd Frontera, un noble perezoso al que le encanta beber y cuya familia está sumida en una montaña de deudas. Utilizando sus conocimientos de ingeniería, Suho diseña inventos para evitar el terrible futuro que le aguarda. Con la ayuda de un hámster gigante, un caballero y la magia del mundo, ¿podrá Suho sacar a su nueva familia de las deudas y construir un futuro mejor?', 'Finalizado', '2025-10-02', 'https://gg.asuracomic.net/storage/media/163/conversions/fc6b81ea-optimized.webp', NULL, '2025-10-02 20:30:40', '2025-10-02 20:30:40');
 
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `manhwa_genre`
 --
--- Creación: 01-04-2025 a las 04:39:14
+-- Creación: 02-10-2025 a las 20:03:44
 --
 
 CREATE TABLE `manhwa_genre` (
@@ -275,7 +277,13 @@ INSERT INTO `manhwa_genre` (`manhwa_id`, `genero_id`, `created_at`) VALUES
 (32, 9, '2025-06-20 20:14:09'),
 (32, 11, '2025-06-20 20:14:09'),
 (32, 19, '2025-06-20 20:14:09'),
-(32, 25, '2025-06-20 20:14:09');
+(32, 25, '2025-06-20 20:14:09'),
+(33, 1, '2025-10-02 20:30:40'),
+(33, 3, '2025-10-02 20:30:40'),
+(33, 6, '2025-10-02 20:30:40'),
+(33, 7, '2025-10-02 20:30:40'),
+(33, 18, '2025-10-02 20:30:40'),
+(33, 21, '2025-10-02 20:30:40');
 
 --
 -- Índices para tablas volcadas
@@ -333,7 +341,7 @@ ALTER TABLE `generos`
 -- AUTO_INCREMENT de la tabla `manhwas`
 --
 ALTER TABLE `manhwas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- Restricciones para tablas volcadas
